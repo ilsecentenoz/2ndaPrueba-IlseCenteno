@@ -6,15 +6,6 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif; }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center; }
-
 .row::after {
   content: "";
   clear: both;
@@ -22,10 +13,7 @@ footer {
 
 [class*="col-"] {
   float: left;
-  border: 1px solid red; }
-
-.txt-center {
-  text-align: center; }
+  padding: 0px; }
 
 .col-1 {
   width: 8.33%; }
@@ -83,58 +71,28 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   border-radius: 5px;
-  text-align: center;
-  float: right;
-  margin-left: 10px; }
-
-.buttoms a:hover {
-  background-color: #367197;
-  color: #ffffff; }
+  text-align: center; }
 
 .icons a {
   background-color: rgba(255, 255, 255, 0.1);
-  float: right;
+  float: left;
   display: flex;
   border-radius: 20px;
-  margin: 5px 10px;
-  padding: 8px;
-  text-decoration: none; }
+  margin-left: 10px;
+  padding: 8px; }
 
-.icons img {
-  width: 25px;
-  height: 25px; }
-
-.icons a i {
-  color: white;
-  font-size: 20px; }
-
-.icons a:hover {
-  background-color: #367197; }
-
-.icons a i:hover {
-  color: #ffffff; }
-
-.options-user a {
-  color: #797979;
-  padding: 20px;
-  margin: auto;
-  display: inline-block;
-  float: right;
-  text-decoration: none; }
-
-.options-user a:hover {
-  color: #49a9ea;
-  text-decoration: underline; }
+.icons a img {
+  width: 25px; }
 
 #sidenav {
   height: 100%;
   position: fixed;
-  color: #ffffff;
-  top: 50px;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
-  overflow-x: scroll;
-  background-color: #235473;
-  padding: 10px; }
+  top: 50px;
+  left: 0;
+  background-color: #235473; }
 
 .inline {
   color: #22b573; }
@@ -145,48 +103,50 @@ footer {
 .division {
   color: #e6e6e6; }
 
+.sidemenu {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: space-between; }
+
 #infoUser {
   background-color: #cccccc;
   position: relative;
-  top: 50px;
-  height: 70px; }
+  top: 50px; }
 
 .logo {
   width: 125px; }
 
 .menu {
   width: 25px;
-  height: 25px;
-  width: 25px;
-  margin: 23px 10px;
-  float: right; }
+  height: 25px; }
 
 .user {
   width: 30%;
   display: inline-flex;
   padding: 10px; }
 
-.imgUser {
-  border-radius: 100px; }
-
-.sidenav-list {
-  list-style: none;
-  padding-left: 0px; }
-  .sidenav-list li {
-    display: flex;
-    padding-bottom: 10px; }
-  .sidenav-list img {
+.account {
+  display: inline-flex;
+  height: 15px; }
+  .account p {
+    margin: 0; }
+  .account span {
     margin-right: 10px; }
 
-.sidenav-list li img:nth-child(1) {
-  width: 10px;
-  height: 10px;
-  position: relative;
-  top: 10px; }
+.account span img {
+  width: 12px;
+  padding-right: 5px; }
 
-.sidenav-list li img:nth-child(2) {
-  width: 30px;
-  height: 30px; }
+.imgUser {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  float: right; }
+
+.userOption img {
+  width: 24px;
+  margin-left: 5px; }
 
 .name {
   display: block; }
@@ -196,19 +156,8 @@ footer {
 .search {
   border: none;
   border-radius: 5px;
-  padding: 8px;
-  width: 100%;
-  margin-top: 10px;
-  background-image: url("../assets/search.png");
-  background-repeat: no-repeat;
-  background-position: right; }
-
-.comment {
-  border: none;
-  border-radius: 5px;
-  padding: 14px;
-  width: 100%;
-  margin: 10px 10px; }
+  padding: 5px;
+  width: 100%; }
 
 .userOption {
   width: 60%;
@@ -223,45 +172,5 @@ footer {
 .userOption a:hover {
   color: #49a9ea;
   text-decoration: underline; }
-
-hr {
-  color: #e6e6e6;
-  width: 100%; }
-
-.img-responsive {
-  width: 100%;
-  height: auto; }
-
-.status i {
-  font-size: 12px; }
-
-.list-status {
-  padding: 0;
-  list-style: none;
-  display: inline-flex; }
-  .list-status li {
-    padding-left: 8px; }
-
-#comments {
-  width: 90%;
-  float: right;
-  top: 80px;
-  position: relative; }
-  #comments img {
-    width: 50px;
-    height: 50px; }
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  background-color: #cccccc;
-  color: white;
-  text-align: center; }
-  footer img {
-    width: 25%;
-    padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */

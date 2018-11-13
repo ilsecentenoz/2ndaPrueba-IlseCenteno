@@ -1,63 +1,267 @@
-/*
-Error: Invalid CSS after ".": expected class name, was ""
-        on line 168 of main.sass
+* {
+  box-sizing: border-box; }
 
-163:   color: $division
-164:   width: 100%
-165: .img-responsive
-166:   width: 100%
-167:   height: auto
-168: .
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
 
-Backtrace:
-main.sass:168
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:197:in `class_selector'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:159:in `simple_selector_sequence'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:111:in `selector'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1186:in `expr!'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/var/lib/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \".\": expected class name, was \"\"\A         on line 168 of main.sass\A \A 163:   color: $division\A 164:   width: 100%\A 165: .img-responsive\A 166:   width: 100%\A 167:   height: auto\A 168: ."; }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  border: 1px solid red; }
+
+.txt-center {
+  text-align: center; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%; } }
+#menu {
+  display: flex;
+  background-color: #49a9ea;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 2; }
+
+.buttoms a {
+  display: inline-flex;
+  padding: 8px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  float: right;
+  margin-left: 10px; }
+
+.buttoms a:hover {
+  background-color: #367197;
+  color: #ffffff; }
+
+.icons a {
+  background-color: rgba(255, 255, 255, 0.1);
+  float: right;
+  display: flex;
+  border-radius: 20px;
+  margin: 5px 10px;
+  padding: 8px;
+  text-decoration: none; }
+
+.icons img {
+  width: 25px;
+  height: 25px; }
+
+.icons a i {
+  color: white;
+  font-size: 20px; }
+
+.icons a:hover {
+  background-color: #367197; }
+
+.icons a i:hover {
+  color: #ffffff; }
+
+.options-user a {
+  color: #797979;
+  padding: 20px;
+  margin: auto;
+  display: inline-block;
+  float: right;
+  text-decoration: none; }
+
+.options-user a:hover {
+  color: #49a9ea;
+  text-decoration: underline; }
+
+#sidenav {
+  height: 100%;
+  position: fixed;
+  color: #ffffff;
+  top: 50px;
+  z-index: 1;
+  overflow-x: scroll;
+  background-color: #235473;
+  padding: 10px; }
+
+.inline {
+  color: #22b573; }
+
+.disabled {
+  color: #cccccc; }
+
+.division {
+  color: #e6e6e6; }
+
+#infoUser {
+  background-color: #cccccc;
+  position: relative;
+  top: 50px;
+  height: 70px; }
+
+.logo {
+  width: 125px; }
+
+.menu {
+  width: 25px;
+  height: 25px;
+  width: 25px;
+  margin: 23px 10px;
+  float: right; }
+
+.user {
+  width: 30%;
+  display: inline-flex;
+  padding: 10px; }
+
+.imgUser {
+  border-radius: 100px; }
+
+.sidenav-list {
+  list-style: none;
+  padding-left: 0px; }
+  .sidenav-list li {
+    display: flex;
+    padding-bottom: 10px; }
+  .sidenav-list img {
+    margin-right: 10px; }
+
+.sidenav-list li img:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 10px; }
+
+.sidenav-list li img:nth-child(2) {
+  width: 30px;
+  height: 30px; }
+
+.name {
+  display: block; }
+  .name h3 {
+    margin: 0; }
+
+.search {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin-top: 10px;
+  background-image: url("../assets/search.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.comment {
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  width: 100%;
+  margin: 10px 10px; }
+
+.userOption {
+  width: 60%;
+  margin-top: 18px; }
+  .userOption a {
+    color: #797979;
+    text-decoration: none; }
+
+.userOption a img {
+  width: 16px; }
+
+.userOption a:hover {
+  color: #49a9ea;
+  text-decoration: underline; }
+
+hr {
+  color: #e6e6e6;
+  width: 100%; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+.status i {
+  font-size: 12px; }
+
+.list-status {
+  padding: 0;
+  list-style: none;
+  display: inline-flex; }
+  .list-status li {
+    padding-left: 8px; }
+
+#comments {
+  width: 90%;
+  float: right;
+  top: 80px;
+  position: relative; }
+  #comments img {
+    width: 50px;
+    height: 50px; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cccccc;
+  color: white;
+  text-align: center; }
+  footer img {
+    width: 25%;
+    padding: 5px; }
+
+/*# sourceMappingURL=main.css.map */
